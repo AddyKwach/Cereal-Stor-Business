@@ -1,0 +1,161 @@
+/* ============================================================
+   GrainHaus – admin.css
+   ============================================================ */
+
+.admin-body { background: var(--cream-dark); }
+
+/* ---- LOGIN ---- */
+.admin-login {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, var(--green-deep) 0%, #0d2b1e 100%);
+  padding: 20px;
+}
+.admin-login__card {
+  background: rgba(255,255,255,0.06); backdrop-filter: blur(16px);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: var(--radius-lg); padding: 48px 40px;
+  width: 100%; max-width: 420px;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.3);
+}
+.admin-login__logo { display: flex; align-items: center; gap: 10px; margin-bottom: 24px; }
+.admin-login__card h2 { color: var(--cream); font-size: 1.6rem; margin-bottom: 6px; }
+.admin-login__card > p { color: rgba(255,255,255,0.45); font-size: 0.87rem; margin-bottom: 28px; }
+.admin-login__card .form-group label { color: rgba(255,255,255,0.55); }
+.admin-login__card input {
+  background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15);
+  color: var(--cream);
+}
+.admin-login__card input:focus { border-color: var(--amber); box-shadow: 0 0 0 3px rgba(212,134,10,0.2); }
+.login-error { color: #ff7b7b; font-size: 0.83rem; min-height: 20px; margin-bottom: 8px; }
+.login-hint { font-size: 0.75rem; color: rgba(255,255,255,0.25); text-align: center; margin-top: 14px; }
+.login-hint strong { color: rgba(255,255,255,0.4); }
+
+/* ---- DASHBOARD LAYOUT ---- */
+.admin-dash {
+  display: grid; grid-template-columns: 240px 1fr;
+  min-height: 100vh;
+}
+.admin-sidebar {
+  background: var(--near-black);
+  display: flex; flex-direction: column;
+  padding: 24px 0;
+  position: sticky; top: 0; height: 100vh; overflow-y: auto;
+}
+.admin-sidebar__logo {
+  font-family: var(--font-display); font-size: 1.3rem; font-weight: 900;
+  color: var(--cream); padding: 0 24px 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  margin-bottom: 12px;
+  display: flex; align-items: center; gap: 8px;
+}
+.admin-nav { display: flex; flex-direction: column; gap: 4px; padding: 0 12px; flex: 1; }
+.admin-nav__item {
+  text-align: left; padding: 11px 14px;
+  font-size: 0.88rem; font-weight: 600;
+  color: rgba(255,255,255,0.4); border-radius: var(--radius-sm);
+  transition: var(--t);
+}
+.admin-nav__item:hover { color: var(--cream); background: rgba(255,255,255,0.06); }
+.admin-nav__item.active { color: var(--amber-light); background: rgba(212,134,10,0.1); }
+.admin-logout {
+  margin: 16px 24px 0;
+  font-size: 0.82rem; color: rgba(255,255,255,0.25);
+  text-align: left; transition: color var(--t);
+}
+.admin-logout:hover { color: rgba(255,255,255,0.5); }
+
+/* ---- MAIN ---- */
+.admin-main { padding: 32px; overflow-y: auto; }
+.admin-panel { display: none; }
+.admin-panel.active { display: block; }
+.admin-panel__head {
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 28px; flex-wrap: wrap; gap: 14px;
+}
+.admin-panel__head h2 { font-size: 1.5rem; }
+.admin-date { font-size: 0.82rem; color: var(--mid-grey); }
+
+/* ---- DASH STATS ---- */
+.dash-stats {
+  display: grid; grid-template-columns: repeat(4,1fr); gap: 16px; margin-bottom: 32px;
+}
+.dash-stat {
+  background: #fff; border: 1px solid var(--light-border);
+  border-radius: var(--radius); padding: 24px 20px;
+  transition: var(--t);
+}
+.dash-stat:hover { box-shadow: 0 8px 28px rgba(27,67,50,0.1); }
+.dash-stat__icon { font-size: 1.6rem; margin-bottom: 10px; display: block; }
+.dash-stat__val { font-family: var(--font-display); font-size: 1.6rem; font-weight: 900; color: var(--green-deep); margin-bottom: 4px; }
+.dash-stat__label { font-size: 0.78rem; color: var(--mid-grey); }
+
+/* ---- TABLES ---- */
+.orders-table { overflow-x: auto; }
+.orders-table table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+.orders-table th {
+  background: var(--cream-dark); text-align: left;
+  padding: 12px 14px; font-size: 0.73rem; font-weight: 700;
+  letter-spacing: 0.1em; text-transform: uppercase; color: var(--mid-grey);
+  border-bottom: 2px solid var(--light-border);
+}
+.orders-table td {
+  padding: 13px 14px; border-bottom: 1px solid var(--light-border);
+  color: #444; vertical-align: middle;
+}
+.orders-table tr:hover td { background: rgba(27,67,50,0.03); }
+.status-badge {
+  display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+  padding: 3px 10px; border-radius: 20px;
+  text-transform: uppercase;
+}
+.status-badge.delivered { background: rgba(27,67,50,0.12); color: var(--green-deep); }
+.status-badge.pending   { background: rgba(212,134,10,0.15); color: var(--amber); }
+.status-badge.processing { background: rgba(37,99,235,0.12); color: #1d4ed8; }
+.action-btns { display: flex; gap: 6px; }
+.btn-action {
+  font-size: 0.75rem; font-weight: 700; padding: 5px 10px;
+  border-radius: 6px; cursor: pointer; transition: var(--t); border: none;
+}
+.btn-action.approve { background: rgba(27,67,50,0.1); color: var(--green-deep); }
+.btn-action.approve:hover { background: var(--green-deep); color: #fff; }
+.btn-action.view { background: rgba(0,0,0,0.06); color: #555; }
+.btn-action.view:hover { background: #ddd; }
+
+/* ---- DASH RECENT ---- */
+.dash-recent h3 { font-size: 1rem; margin-bottom: 14px; color: var(--green-deep); }
+
+/* ---- CATALOGUE FORM ---- */
+.product-form-wrap { margin-bottom: 24px; }
+.product-form {
+  background: #fff; border: 1px solid var(--light-border);
+  border-left: 4px solid var(--green-mid);
+  border-radius: var(--radius); padding: 28px;
+}
+.product-form__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; }
+.product-form__head h3 { font-size: 1.1rem; }
+.form-cancel { font-size: 0.82rem; color: #e74c3c; font-weight: 600; }
+.form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 16px; }
+.admin-filter-row select {
+  font-family: var(--font-body); font-size: 0.87rem;
+  padding: 9px 14px; border: 1.5px solid var(--light-border);
+  border-radius: var(--radius-sm); background: #fff; cursor: pointer;
+}
+
+/* ---- SETTINGS ---- */
+.settings-grid { display: grid; grid-template-columns: repeat(2,1fr); gap: 20px; }
+.settings-card {
+  background: #fff; border: 1px solid var(--light-border);
+  border-radius: var(--radius); padding: 28px;
+}
+.settings-card h3 { font-size: 1rem; margin-bottom: 18px; color: var(--green-deep); border-bottom: 1px solid var(--light-border); padding-bottom: 12px; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 900px) {
+  .admin-dash { grid-template-columns: 1fr; }
+  .admin-sidebar { display: none; } /* simplified — could add toggle */
+  .dash-stats { grid-template-columns: 1fr 1fr; }
+  .settings-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 500px) {
+  .dash-stats { grid-template-columns: 1fr; }
+}

@@ -4,519 +4,277 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GrainHaus Nairobi – Cereals, Wholesale & Retail</title>
-  <meta name="description" content="Nairobi's premier cereal specialist. Quality grains, pulses, and cereals sold wholesale and retail. Fresh from the source, delivered to your table." />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <meta name="description" content="Nairobi's premier cereal specialist. Quality grains, pulses and cereals sold wholesale and retail." />
+  <link rel="stylesheet" href="css/global.css" />
+  <link rel="stylesheet" href="css/home.css" />
 </head>
 <body>
 
-  <!-- NAV -->
-  <header class="nav" id="nav">
-    <div class="nav__inner">
-      <a href="#" class="nav__logo">
-        <span class="nav__logo-icon">◈</span>
-        <span class="nav__logo-text">GrainHaus</span>
-      </a>
-      <nav class="nav__links" id="navLinks">
-        <a href="#about">About</a>
-        <a href="#products">Products</a>
-        <a href="#wholesale">Wholesale</a>
-        <a href="#why">Why Us</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </header>
-
-  <!-- MOBILE MENU -->
-  <div class="mobile-menu" id="mobileMenu">
-    <button class="mobile-menu__close" id="closeMenu">✕</button>
-    <nav class="mobile-menu__links">
-      <a href="#about" class="mobile-link">About</a>
-      <a href="#products" class="mobile-link">Products</a>
-      <a href="#wholesale" class="mobile-link">Wholesale</a>
-      <a href="#why" class="mobile-link">Why Us</a>
-      <a href="#contact" class="mobile-link">Contact</a>
-    </nav>
-    <p class="mobile-menu__tagline">Nairobi's Grain Specialists</p>
-  </div>
-  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <!-- NAV injected by nav-footer.js -->
 
   <!-- HERO -->
-  <section class="hero" id="hero">
-    <div class="hero__bg-text" aria-hidden="true">GRAIN</div>
-    <div class="hero__content">
-      <div class="hero__badge">Est. Nairobi · Kenya</div>
-      <h1 class="hero__title">
-        From the<br />
-        <em>Field.</em><br />
-        To Your<br />
-        Table.
-      </h1>
-      <p class="hero__sub">Nairobi's premier cereal specialist — quality grains, pulses, and cereals in wholesale and retail quantities, straight from Kenya's finest farms.</p>
-      <div class="hero__cta-row">
-        <a href="#products" class="btn btn--primary">Shop Products</a>
-        <a href="#wholesale" class="btn btn--outline">Wholesale Inquiry</a>
+  <section class="hero">
+    <div class="hero__overlay"></div>
+    <div class="hero__content container">
+      <div class="hero__left">
+        <span class="label label--amber fade-up">Est. Nairobi, Kenya 🇰🇪</span>
+        <h1 class="hero__title fade-up">
+          From the<br />
+          <em>Farm.</em><br />
+          To Your<br />
+          Table.
+        </h1>
+        <p class="hero__sub fade-up">Nairobi's premier cereal specialist — premium grains, pulses &amp; flours sold wholesale and retail. Fresh, clean, and traceable from Kenya's finest farms.</p>
+        <div class="hero__cta fade-up">
+          <a href="pages/shop.html" class="btn btn--amber">🛒 Shop Now</a>
+          <a href="pages/wholesale.html" class="btn btn--outline-white">Wholesale Inquiry</a>
+        </div>
+        <div class="hero__trust fade-up">
+          <div class="trust-item"><span>✓</span> 50+ Grain Varieties</div>
+          <div class="trust-item"><span>✓</span> 100% Kenyan Sourced</div>
+          <div class="trust-item"><span>✓</span> Nairobi Delivery</div>
+        </div>
+      </div>
+      <div class="hero__right fade-up">
+        <div class="hero__stats-card">
+          <div class="hero__stat">
+            <span class="hero__stat-num">1,200+</span>
+            <span class="hero__stat-label">Happy Customers</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">50+</span>
+            <span class="hero__stat-label">Grain Varieties</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-num">8yrs</span>
+            <span class="hero__stat-label">In Business</span>
+          </div>
+          <div class="hero__divider"></div>
+          <p class="hero__card-quote">"Quality grains, honest prices — the GrainHaus promise."</p>
+        </div>
       </div>
     </div>
-    <div class="hero__scroll-hint">
-      <span>Scroll</span>
-      <div class="hero__scroll-line"></div>
-    </div>
-    <div class="hero__grain-pattern" aria-hidden="true">
-      <div class="grain-dot"></div><div class="grain-dot"></div><div class="grain-dot"></div>
-      <div class="grain-dot"></div><div class="grain-dot"></div><div class="grain-dot"></div>
-      <div class="grain-dot"></div><div class="grain-dot"></div><div class="grain-dot"></div>
-    </div>
+    <div class="hero__scroll"><div class="hero__scroll-line"></div></div>
   </section>
 
   <!-- TICKER -->
   <div class="ticker">
     <div class="ticker__track">
-      <span>Maize · Beans · Rice · Sorghum · Millet · Lentils · Green Grams · Peas · Wheat · Barley · Oats · Cassava · Soya Beans · Chickpeas · Black-Eyed Peas ·&nbsp;</span>
-      <span>Maize · Beans · Rice · Sorghum · Millet · Lentils · Green Grams · Peas · Wheat · Barley · Oats · Cassava · Soya Beans · Chickpeas · Black-Eyed Peas ·&nbsp;</span>
+      <span>🌽 Maize &nbsp;·&nbsp; 🫘 Beans &nbsp;·&nbsp; 🌾 Rice &nbsp;·&nbsp; 🌿 Sorghum &nbsp;·&nbsp; 🌾 Millet &nbsp;·&nbsp; 🟡 Lentils &nbsp;·&nbsp; 🟢 Green Grams &nbsp;·&nbsp; 🫛 Chickpeas &nbsp;·&nbsp; 🌾 Wheat &nbsp;·&nbsp; 🟤 Soya &nbsp;·&nbsp; 🌰 Millet Flour &nbsp;·&nbsp; 🧂 Maize Flour &nbsp;·&nbsp;</span>
+      <span>🌽 Maize &nbsp;·&nbsp; 🫘 Beans &nbsp;·&nbsp; 🌾 Rice &nbsp;·&nbsp; 🌿 Sorghum &nbsp;·&nbsp; 🌾 Millet &nbsp;·&nbsp; 🟡 Lentils &nbsp;·&nbsp; 🟢 Green Grams &nbsp;·&nbsp; 🫛 Chickpeas &nbsp;·&nbsp; 🌾 Wheat &nbsp;·&nbsp; 🟤 Soya &nbsp;·&nbsp; 🌰 Millet Flour &nbsp;·&nbsp; 🧂 Maize Flour &nbsp;·&nbsp;</span>
     </div>
   </div>
 
-  <!-- ABOUT -->
-  <section class="about section" id="about">
-    <div class="container about__grid">
-      <div class="about__text">
-        <span class="section-label">Our Story</span>
-        <h2 class="section-title">More Than a Shop.<br />A Nairobi Institution.</h2>
-        <p>GrainHaus was founded with a single mission: to connect Nairobi's homes, restaurants, and businesses with the freshest, highest-quality cereals and pulses that East Africa has to offer.</p>
-        <p>We source directly from trusted Kenyan farmers, ensuring every grain you buy is traceable, clean, and packed with nutrition. Whether you need a small bag for the week or a bulk supply for your business — we've got you covered.</p>
-        <div class="about__stats">
-          <div class="stat">
-            <span class="stat__num">50+</span>
-            <span class="stat__label">Grain Varieties</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num">1000+</span>
-            <span class="stat__label">Happy Clients</span>
-          </div>
-          <div class="stat">
-            <span class="stat__num">100%</span>
-            <span class="stat__label">Kenyan Sourced</span>
-          </div>
-        </div>
-      </div>
-      <div class="about__visual">
-        <div class="about__card">
-          <div class="about__card-inner">
-            <div class="grain-icon">⬡</div>
-            <p class="about__card-text">"Quality grains, honest prices — the GrainHaus promise since day one."</p>
-            <span class="about__card-sig">— The GrainHaus Team</span>
-          </div>
-        </div>
-        <div class="about__badge-float">
-          <span>Farm</span>
-          <span class="arrow">→</span>
-          <span>Mill</span>
-          <span class="arrow">→</span>
-          <span>You</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PRODUCTS -->
-  <section class="products section" id="products">
-    <div class="container">
-      <span class="section-label">Our Products</span>
-      <h2 class="section-title">Fresh. Clean. Nutritious.</h2>
-      <p class="section-sub">Every product is hand-selected, quality-checked, and available in retail packs or wholesale quantities.</p>
-
-      <div class="products__filter">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="grains">Grains</button>
-        <button class="filter-btn" data-filter="pulses">Pulses & Legumes</button>
-        <button class="filter-btn" data-filter="flours">Flours & Meals</button>
-      </div>
-
-      <div class="products__grid">
-
-        <div class="product-card" data-cat="grains">
-          <div class="product-card__icon">🌽</div>
-          <div class="product-card__body">
-            <h3>Whole Maize</h3>
-            <p>Clean, dry, premium-grade maize. Ideal for milling, cooking, and animal feed.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="grains">
-          <div class="product-card__icon">🌾</div>
-          <div class="product-card__body">
-            <h3>Rice (Pishori)</h3>
-            <p>Fragrant Kenyan Pishori rice — a household favourite with a distinctive aroma.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="grains">
-          <div class="product-card__icon">🌿</div>
-          <div class="product-card__body">
-            <h3>Sorghum</h3>
-            <p>Drought-resistant, nutrient-dense sorghum grain — perfect for porridge and brewing.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="grains">
-          <div class="product-card__icon">🌾</div>
-          <div class="product-card__body">
-            <h3>Finger Millet</h3>
-            <p>High-calcium, iron-rich millet — traditional Kenyan staple for uji and ugali.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="pulses">
-          <div class="product-card__icon">🫘</div>
-          <div class="product-card__body">
-            <h3>Red Kidney Beans</h3>
-            <p>Plump, clean kidney beans — a protein-packed staple for families and restaurants.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="pulses">
-          <div class="product-card__icon">🟢</div>
-          <div class="product-card__body">
-            <h3>Green Grams (Ndengu)</h3>
-            <p>Fast-cooking, versatile green grams. A Kenyan kitchen essential.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="pulses">
-          <div class="product-card__icon">🟡</div>
-          <div class="product-card__body">
-            <h3>Yellow Lentils (Ndengu)</h3>
-            <p>Mild, nutritious lentils excellent for soups, stews, and dhal preparations.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="pulses">
-          <div class="product-card__icon">🫛</div>
-          <div class="product-card__body">
-            <h3>Chickpeas</h3>
-            <p>Premium whole chickpeas — for hummus, curries, and roasted snacks.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="flours">
-          <div class="product-card__icon">🧂</div>
-          <div class="product-card__body">
-            <h3>Maize Flour (Unga)</h3>
-            <p>Finely milled maize flour — the backbone of Kenyan ugali. Available in bulk.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="flours">
-          <div class="product-card__icon">🌰</div>
-          <div class="product-card__body">
-            <h3>Millet Flour</h3>
-            <p>Stone-ground finger millet flour — naturally gluten-free and mineral-rich.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="flours">
-          <div class="product-card__icon">🌾</div>
-          <div class="product-card__body">
-            <h3>Wheat Flour</h3>
-            <p>All-purpose wheat flour, perfect for bakeries, hotels, and home cooking.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="product-card" data-cat="grains">
-          <div class="product-card__icon">🟤</div>
-          <div class="product-card__body">
-            <h3>Soya Beans</h3>
-            <p>High-protein soya — ideal for tofu, soya milk, and livestock feed manufacturers.</p>
-            <div class="product-card__tags">
-              <span class="tag">Retail</span><span class="tag">Wholesale</span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- WHOLESALE BANNER -->
-  <section class="wholesale section" id="wholesale">
-    <div class="wholesale__bg" aria-hidden="true">BULK</div>
-    <div class="container wholesale__grid">
-      <div class="wholesale__text">
-        <span class="section-label light">Wholesale</span>
-        <h2 class="section-title light">Buying in Bulk?<br />We've Got You.</h2>
-        <p>GrainHaus is a trusted wholesale supplier for supermarkets, hotels, schools, restaurants, and agro-dealers across Nairobi and beyond. We offer competitive bulk pricing, flexible packaging, and reliable delivery.</p>
-        <ul class="wholesale__perks">
-          <li>✓ Minimum orders from 50kg bags</li>
-          <li>✓ Custom packaging available</li>
-          <li>✓ Delivery within Nairobi</li>
-          <li>✓ Dedicated account managers</li>
-          <li>✓ Credit terms for established clients</li>
-        </ul>
-        <a href="#contact" class="btn btn--white">Request a Quote</a>
-      </div>
-      <div class="wholesale__cards">
-        <div class="wcard">
-          <span class="wcard__icon">🏪</span>
-          <h3>Supermarkets &amp; Shops</h3>
-          <p>Shelf-ready packaging, barcode-ready, bulk reorder scheduling.</p>
-        </div>
-        <div class="wcard">
-          <span class="wcard__icon">🍽️</span>
-          <h3>Restaurants &amp; Hotels</h3>
-          <p>Large-quantity consistent supply, tailored to your weekly menu needs.</p>
-        </div>
-        <div class="wcard">
-          <span class="wcard__icon">🏫</span>
-          <h3>Schools &amp; Institutions</h3>
-          <p>Tender-ready pricing with invoicing and delivery documentation.</p>
-        </div>
-        <div class="wcard">
-          <span class="wcard__icon">🚜</span>
-          <h3>Agro-Dealers</h3>
-          <p>Competitive reseller margins for agro-businesses and farm supply stores.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- WHY US -->
-  <section class="why section" id="why">
+  <section class="section why">
     <div class="container">
-      <span class="section-label">Why GrainHaus</span>
-      <h2 class="section-title">The GrainHaus Difference</h2>
+      <span class="label fade-up">Why Choose Us</span>
+      <h2 class="why__title fade-up">The GrainHaus Difference</h2>
       <div class="why__grid">
-        <div class="why-item">
-          <div class="why-item__num">01</div>
+        <div class="why-card fade-up">
+          <div class="why-card__icon">🌱</div>
           <h3>Direct Farm Sourcing</h3>
-          <p>We cut out the middleman. Every grain is sourced directly from verified Kenyan farmers, ensuring freshness and traceability in every bag.</p>
+          <p>We cut out the middleman. Every grain is sourced directly from verified Kenyan farmers for maximum freshness and traceability.</p>
         </div>
-        <div class="why-item">
-          <div class="why-item__num">02</div>
-          <h3>Quality Grading</h3>
-          <p>All products are cleaned, sorted, and graded before reaching you. No stones, no debris — just clean, premium-quality cereals.</p>
+        <div class="why-card fade-up">
+          <div class="why-card__icon">⚖️</div>
+          <h3>Quality Graded</h3>
+          <p>All products are cleaned, sorted, and graded. No stones, no debris — just pure, premium-quality cereals every single time.</p>
         </div>
-        <div class="why-item">
-          <div class="why-item__num">03</div>
-          <h3>Competitive Pricing</h3>
-          <p>Whether you're buying one kilogram or one tonne — our pricing is fair, transparent, and built to give you value at every quantity level.</p>
+        <div class="why-card fade-up">
+          <div class="why-card__icon">💰</div>
+          <h3>Unbeatable Pricing</h3>
+          <p>Fair, transparent pricing whether you buy 1kg or 1 tonne. Wholesale discounts available for bulk buyers.</p>
         </div>
-        <div class="why-item">
-          <div class="why-item__num">04</div>
-          <h3>Nairobi Delivery</h3>
-          <p>Fast, reliable delivery across Nairobi and surrounding areas. Large orders dispatched same-day or next-day.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item__num">05</div>
-          <h3>Expert Knowledge</h3>
-          <p>Our team knows grains inside out. Get advice on varieties, storage, quantities, and nutritional value — we're here to help.</p>
-        </div>
-        <div class="why-item">
-          <div class="why-item__num">06</div>
-          <h3>Community First</h3>
-          <p>GrainHaus is a proudly Nairobi-based business, committed to supporting local farmers and strengthening Kenya's food supply chain.</p>
+        <div class="why-card fade-up">
+          <div class="why-card__icon">🚚</div>
+          <h3>Fast Delivery</h3>
+          <p>Multiple delivery options — Uber Boda, G4S Courier, Pick Up Mtaani, or collect in-store. Nairobi-wide coverage.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="section featured" style="background:var(--cream-dark)">
+    <div class="container">
+      <div class="featured__head">
+        <div>
+          <span class="label fade-up">Our Products</span>
+          <h2 class="fade-up">Popular Cereals</h2>
+        </div>
+        <a href="pages/shop.html" class="btn btn--outline-green fade-up">View All Products →</a>
+      </div>
+      <div class="products__grid">
+        <div class="product-card fade-up">
+          <div class="product-card__img">🌽</div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Whole Maize</h3>
+            <p class="product-card__desc">Premium-grade, clean and dry whole maize. Perfect for milling, cooking or animal feed.</p>
+            <div class="product-card__meta">
+              <div>
+                <div class="product-card__price">KSh 80 <span>/ kg</span></div>
+                <div class="product-card__price" style="font-size:0.8rem; color:var(--amber)">KSh 3,500 <span>/ 50kg bag</span></div>
+              </div>
+              <button class="product-card__add" onclick="GH.addToCart({id:'maize',name:'Whole Maize',price:80,unit:'kg',qty:1})">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card fade-up">
+          <div class="product-card__img">🌾</div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Pishori Rice</h3>
+            <p class="product-card__desc">Fragrant Kenyan Pishori rice — aromatic, premium quality, a household favourite.</p>
+            <div class="product-card__meta">
+              <div>
+                <div class="product-card__price">KSh 160 <span>/ kg</span></div>
+                <div class="product-card__price" style="font-size:0.8rem; color:var(--amber)">KSh 7,200 <span>/ 50kg bag</span></div>
+              </div>
+              <button class="product-card__add" onclick="GH.addToCart({id:'rice',name:'Pishori Rice',price:160,unit:'kg',qty:1})">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card fade-up">
+          <div class="product-card__img">🫘</div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Red Kidney Beans</h3>
+            <p class="product-card__desc">Plump, protein-rich kidney beans — a Kenyan kitchen staple for families and restaurants.</p>
+            <div class="product-card__meta">
+              <div>
+                <div class="product-card__price">KSh 140 <span>/ kg</span></div>
+                <div class="product-card__price" style="font-size:0.8rem; color:var(--amber)">KSh 6,300 <span>/ 50kg bag</span></div>
+              </div>
+              <button class="product-card__add" onclick="GH.addToCart({id:'beans',name:'Red Kidney Beans',price:140,unit:'kg',qty:1})">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="product-card fade-up">
+          <div class="product-card__img">🟢</div>
+          <div class="product-card__body">
+            <h3 class="product-card__name">Green Grams (Ndengu)</h3>
+            <p class="product-card__desc">Fast-cooking, versatile green grams — a must-have in every Kenyan kitchen.</p>
+            <div class="product-card__meta">
+              <div>
+                <div class="product-card__price">KSh 130 <span>/ kg</span></div>
+                <div class="product-card__price" style="font-size:0.8rem; color:var(--amber)">KSh 5,800 <span>/ 50kg bag</span></div>
+              </div>
+              <button class="product-card__add" onclick="GH.addToCart({id:'ndengu',name:'Green Grams',price:130,unit:'kg',qty:1})">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHOLESALE PROMO BANNER -->
+  <section class="wholesale-banner">
+    <div class="container wholesale-banner__inner">
+      <div>
+        <span class="label label--amber">Wholesale</span>
+        <h2 style="color:var(--cream)">Buying in Bulk?</h2>
+        <p>Competitive prices for supermarkets, restaurants, hotels, schools &amp; agro-dealers across Nairobi.</p>
+      </div>
+      <a href="pages/wholesale.html" class="btn btn--amber">Get a Wholesale Quote →</a>
     </div>
   </section>
 
   <!-- TESTIMONIALS -->
-  <section class="testimonials section">
+  <section class="section testimonials">
     <div class="container">
-      <span class="section-label">Testimonials</span>
-      <h2 class="section-title">What Our Clients Say</h2>
+      <span class="label fade-up">Testimonials</span>
+      <h2 class="fade-up">What Our Clients Say</h2>
       <div class="testimonials__grid">
-        <div class="tcard">
-          <p class="tcard__text">"GrainHaus has been our supplier for over two years. The quality is consistent and the prices are fair. Our restaurant hasn't looked back."</p>
-          <div class="tcard__author">
-            <span class="tcard__initials">JM</span>
-            <div>
-              <strong>James Mutua</strong>
-              <span>Restaurant Owner, Westlands</span>
-            </div>
+        <div class="t-card fade-up">
+          <div class="t-card__stars">★★★★★</div>
+          <p>"GrainHaus has been our supplier for over two years. Consistent quality, fair pricing, and reliable delivery. Our restaurant hasn't looked back!"</p>
+          <div class="t-card__author">
+            <div class="t-card__avatar">JM</div>
+            <div><strong>James Mutua</strong><span>Restaurant Owner, Westlands</span></div>
           </div>
         </div>
-        <div class="tcard">
-          <p class="tcard__text">"I buy my household grains from GrainHaus every month. The green grams and kidney beans are always fresh. Highly recommended!"</p>
-          <div class="tcard__author">
-            <span class="tcard__initials">AW</span>
-            <div>
-              <strong>Amina Wanjiru</strong>
-              <span>Regular Customer, Eastleigh</span>
-            </div>
+        <div class="t-card fade-up">
+          <div class="t-card__stars">★★★★★</div>
+          <p>"I buy my household grains monthly. The green grams and rice are always clean and fresh. Best cereal shop in Nairobi!"</p>
+          <div class="t-card__author">
+            <div class="t-card__avatar">AW</div>
+            <div><strong>Amina Wanjiru</strong><span>Regular Customer, Eastleigh</span></div>
           </div>
         </div>
-        <div class="tcard">
-          <p class="tcard__text">"As a school feeding program manager, I need reliability. GrainHaus delivers on time, every time, with proper documentation. Excellent service."</p>
-          <div class="tcard__author">
-            <span class="tcard__initials">PO</span>
-            <div>
-              <strong>Peter Otieno</strong>
-              <span>Procurement Manager, Nairobi</span>
-            </div>
+        <div class="t-card fade-up">
+          <div class="t-card__stars">★★★★★</div>
+          <p>"As a school procurement manager, reliability is everything. GrainHaus delivers on time with proper documentation every single time."</p>
+          <div class="t-card__author">
+            <div class="t-card__avatar">PO</div>
+            <div><strong>Peter Otieno</strong><span>Procurement Manager, Nairobi</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section class="contact section" id="contact">
-    <div class="container contact__grid">
-      <div class="contact__info">
-        <span class="section-label">Get In Touch</span>
-        <h2 class="section-title">Visit Us or<br />Reach Out.</h2>
-        <div class="contact__details">
-          <div class="contact__item">
-            <span class="contact__icon">📍</span>
-            <div>
-              <strong>Location</strong>
-              <p>Wakulima Market, Haile Selassie Avenue<br />Nairobi, Kenya</p>
-            </div>
-          </div>
-          <div class="contact__item">
-            <span class="contact__icon">📞</span>
-            <div>
-              <strong>Phone / WhatsApp</strong>
-              <p><a href="tel:+254700000000">+254 700 000 000</a></p>
-            </div>
-          </div>
-          <div class="contact__item">
-            <span class="contact__icon">📧</span>
-            <div>
-              <strong>Email</strong>
-              <p><a href="mailto:hello@grainhaus.co.ke">hello@grainhaus.co.ke</a></p>
-            </div>
-          </div>
-          <div class="contact__item">
-            <span class="contact__icon">🕐</span>
-            <div>
-              <strong>Trading Hours</strong>
-              <p>Mon – Sat: 7:00 AM – 7:00 PM<br />Sunday: 8:00 AM – 2:00 PM</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="contact__form-wrap">
-        <form class="contact__form" id="contactForm">
-          <h3>Send Us a Message</h3>
-          <div class="form-group">
-            <label for="name">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="e.g. Jane Wanjiku" required />
-          </div>
-          <div class="form-group">
-            <label for="phone">Phone / WhatsApp</label>
-            <input type="tel" id="phone" name="phone" placeholder="+254 7XX XXX XXX" />
-          </div>
-          <div class="form-group">
-            <label for="email">Email Address</label>
-            <input type="email" id="email" name="email" placeholder="you@example.com" required />
-          </div>
-          <div class="form-group">
-            <label for="type">Inquiry Type</label>
-            <select id="type" name="type">
-              <option value="retail">Retail Purchase</option>
-              <option value="wholesale">Wholesale Inquiry</option>
-              <option value="delivery">Delivery Query</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="Tell us what you need..."></textarea>
-          </div>
-          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
-          <p class="form-note">We typically respond within 2 hours during business hours.</p>
-        </form>
-      </div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div class="footer__brand">
-        <a href="#" class="nav__logo">
+  <!-- SCRIPTS -->
+  <script>
+    // Fix paths for index.html (root level)
+    const NAV_HTML = `
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a href="index.html" class="nav__logo">
           <span class="nav__logo-icon">◈</span>
           <span class="nav__logo-text">GrainHaus</span>
         </a>
-        <p>Nairobi's Grain Specialists.<br />Quality cereals, wholesale & retail.</p>
-        <div class="footer__socials">
-          <a href="#" aria-label="WhatsApp">📱</a>
-          <a href="#" aria-label="Facebook">📘</a>
-          <a href="#" aria-label="Instagram">📸</a>
+        <nav class="nav__links">
+          <a href="index.html" class="active">Home</a>
+          <a href="pages/shop.html">Shop</a>
+          <a href="pages/wholesale.html">Wholesale</a>
+          <a href="pages/about.html">About</a>
+          <a href="pages/contact.html">Contact</a>
+        </nav>
+        <div class="nav__actions">
+          <a href="pages/cart.html" class="nav__cart" aria-label="Cart">🛒<span class="cart-badge" style="display:none">0</span></a>
+          <a href="pages/shop.html" class="btn btn--amber btn--sm">Order Now</a>
         </div>
+        <button class="nav__hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
       </div>
-      <div class="footer__links">
-        <h4>Quick Links</h4>
-        <a href="#about">About Us</a>
-        <a href="#products">Products</a>
-        <a href="#wholesale">Wholesale</a>
-        <a href="#contact">Contact</a>
-      </div>
-      <div class="footer__links">
-        <h4>Products</h4>
-        <a href="#products">Grains</a>
-        <a href="#products">Pulses & Legumes</a>
-        <a href="#products">Flours & Meals</a>
-      </div>
-      <div class="footer__links">
-        <h4>Contact</h4>
-        <a href="tel:+254700000000">+254 700 000 000</a>
-        <a href="mailto:hello@grainhaus.co.ke">hello@grainhaus.co.ke</a>
-        <span>Wakulima Market, Nairobi</span>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <p>© 2025 GrainHaus Nairobi. All rights reserved.</p>
-      <p>Proudly Kenyan 🇰🇪</p>
-    </div>
-  </footer>
+    </header>
+    <div class="mob-overlay" id="mobOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+      <button class="mobile-menu__close" id="closeMob">✕</button>
+      <a href="index.html" class="mobile-link">Home</a>
+      <a href="pages/shop.html" class="mobile-link">Shop</a>
+      <a href="pages/wholesale.html" class="mobile-link">Wholesale</a>
+      <a href="pages/about.html" class="mobile-link">About</a>
+      <a href="pages/contact.html" class="mobile-link">Contact</a>
+      <a href="pages/cart.html" class="mobile-link">🛒 Cart</a>
+      <div class="mobile-menu__foot">Nairobi's Grain Specialists</div>
+    </div>`;
 
-  <!-- WHATSAPP FLOAT -->
-  <a href="https://wa.me/254700000000?text=Hi%20GrainHaus%2C%20I%27d%20like%20to%20enquire%20about%20your%20products." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    <span>WhatsApp Us</span>
-  </a>
+    const FOOTER_HTML = `
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <a href="index.html" class="nav__logo" style="color:var(--cream)"><span class="nav__logo-icon">◈</span><span class="nav__logo-text">GrainHaus</span></a>
+          <p>Nairobi's premier cereal specialist — quality grains, pulses &amp; cereals, wholesale &amp; retail.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="WhatsApp">📱</a>
+            <a href="#" aria-label="Facebook">📘</a>
+            <a href="#" aria-label="Instagram">📸</a>
+          </div>
+        </div>
+        <div class="footer__col"><h4>Quick Links</h4><a href="pages/shop.html">Shop Cereals</a><a href="pages/wholesale.html">Wholesale</a><a href="pages/about.html">About Us</a><a href="pages/contact.html">Contact</a></div>
+        <div class="footer__col"><h4>Products</h4><a href="pages/shop.html">Grains</a><a href="pages/shop.html">Pulses &amp; Legumes</a><a href="pages/shop.html">Flours &amp; Meals</a></div>
+        <div class="footer__col"><h4>Contact</h4><span>📍 Wakulima Market, Nairobi</span><a href="tel:+254700000000">📞 +254 700 000 000</a><a href="mailto:hello@grainhaus.co.ke">✉️ hello@grainhaus.co.ke</a><span>🕐 Mon–Sat 7am–7pm</span></div>
+      </div>
+      <div class="footer__bottom"><p>© 2025 GrainHaus Nairobi. All rights reserved.</p><p>Proudly Kenyan 🇰🇪</p></div>
+    </footer>
+    <a href="https://wa.me/254700000000" class="wa-float" target="_blank">
+      <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      <span>WhatsApp Us</span>
+    </a>`;
 
-  <script src="script.js"></script>
+    document.body.insertAdjacentHTML('afterbegin', NAV_HTML);
+    document.body.insertAdjacentHTML('beforeend', FOOTER_HTML);
+  </script>
+  <script src="js/shared.js"></script>
+  <script src="js/home.js"></script>
 </body>
 </html>

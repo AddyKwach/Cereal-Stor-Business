@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop – GrainHaus Nairobi</title>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/shop.css" />
+</head>
+<body>
+
+  <section class="page-header">
+    <div class="container page-header__inner">
+      <span class="label label--amber">Our Catalogue</span>
+      <h1>Shop Cereals</h1>
+      <p>Browse our full range of grains, pulses, and flours. Available in retail and wholesale quantities.</p>
+    </div>
+  </section>
+
+  <section class="section shop-section">
+    <div class="container">
+      <div class="shop-layout">
+        <!-- SIDEBAR FILTERS -->
+        <aside class="shop-sidebar">
+          <div class="sidebar-block">
+            <h4>Categories</h4>
+            <button class="cat-btn active" data-cat="all">All Products</button>
+            <button class="cat-btn" data-cat="grains">Grains & Rice</button>
+            <button class="cat-btn" data-cat="pulses">Pulses & Legumes</button>
+            <button class="cat-btn" data-cat="flours">Flours & Meals</button>
+            <button class="cat-btn" data-cat="seeds">Seeds & Oilseeds</button>
+          </div>
+          <div class="sidebar-block">
+            <h4>Pack Size</h4>
+            <label class="check-label"><input type="checkbox" value="retail" checked /> Retail (1–10kg)</label>
+            <label class="check-label"><input type="checkbox" value="bulk" checked /> Bulk (50kg bags)</label>
+          </div>
+          <div class="sidebar-block">
+            <h4>Price Range (per kg)</h4>
+            <div class="price-range">
+              <span>KSh <strong id="priceVal">500</strong></span>
+              <input type="range" min="50" max="500" value="500" id="priceRange" />
+              <div class="price-labels"><span>KSh 50</span><span>KSh 500</span></div>
+            </div>
+          </div>
+          <a href="wholesale.html" class="sidebar-wholesale">
+            <span>🏭</span>
+            <div><strong>Need Bulk?</strong><p>Get a wholesale quote for 50kg+ orders</p></div>
+          </a>
+        </aside>
+
+        <!-- PRODUCTS -->
+        <div class="shop-main">
+          <div class="shop-topbar">
+            <span class="shop-count" id="shopCount">Showing 16 products</span>
+            <div class="shop-sort">
+              <label>Sort by</label>
+              <select id="sortSelect">
+                <option value="default">Featured</option>
+                <option value="price-asc">Price: Low to High</option>
+                <option value="price-desc">Price: High to Low</option>
+                <option value="name">Name A–Z</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="shop-grid" id="shopGrid">
+            <!-- Cards rendered by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUANTITY MODAL -->
+  <div class="qty-modal" id="qtyModal">
+    <div class="qty-modal__box">
+      <button class="qty-modal__close" id="closeQty">✕</button>
+      <h3 id="qtyModalName">Product Name</h3>
+      <p class="qty-modal__price" id="qtyModalPrice"></p>
+      <div class="qty-modal__options">
+        <div class="form-group">
+          <label>Unit</label>
+          <select id="qtyUnit">
+            <option value="kg">Per Kilogram (kg)</option>
+            <option value="bag">50kg Bag</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Quantity</label>
+          <div class="qty-stepper">
+            <button id="qtyMinus">−</button>
+            <input type="number" id="qtyInput" value="1" min="1" />
+            <button id="qtyPlus">+</button>
+          </div>
+        </div>
+        <div class="qty-modal__total">
+          Total: <strong id="qtyTotal">KSh 0</strong>
+        </div>
+      </div>
+      <button class="btn btn--green btn--full" id="confirmAdd">Add to Cart 🛒</button>
+    </div>
+  </div>
+  <div class="modal-overlay" id="modalOverlay"></div>
+
+  <script src="../js/nav-footer.js"></script>
+  <script src="../js/shared.js"></script>
+  <script src="../js/shop.js"></script>
+</body>
+</html>
